@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dddb5684-a71f-4c4f-a625-cc0327aabb3c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/11_forloops_if-else_Challenge.py" afterPath="$PROJECT_DIR$/11_forloops_if-else_Challenge.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +21,8 @@
       <file leaf-file-name="11_forloops_if-else_Challenge.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/11_forloops_if-else_Challenge.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+            <state relative-caret-position="253">
+              <caret line="142" column="20" lean-forward="true" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -278,8 +279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/11_forloops_if-else_Challenge.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+        <state relative-caret-position="253">
+          <caret line="142" column="20" lean-forward="true" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="20" />
           <folding />
         </state>
       </provider>

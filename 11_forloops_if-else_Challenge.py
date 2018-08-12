@@ -105,8 +105,34 @@
 # So you can add code to check that input does not end with period
 # See that in code after this.
 
+# ipAddress = input("Please enter an IP address: ")
+# ipAddress += '.' # Here we append a . to the input
+# segment = 1
+# segmentLength = 0
+# # character = ''
+#
+# for character in ipAddress:
+#     if character == '.':
+#         print("Segment {0}'s length is {1}".format(segment, segmentLength))
+#         segment += 1
+#         segmentLength = 0
+#     else:
+#         segmentLength += 1
+#
+# if character != '.': # This test the last character if its not .
+#     print("Segment {0}'s length is {1}".format(segment, segmentLength))
+#
+
+# ======================================================================================
+
+# Trainers code_3
+# In this code, we test to see if there is no period at the end of input
+# if no period, we add one, if there is already one, we don't add
+
+
 ipAddress = input("Please enter an IP address: ")
-ipAddress += '.' # Here we append a . to the input
+if ipAddress[-1] != '.': # if no period at end, then add/concatenate period
+    ipAddress += '.' # Here we append a . to the input
 segment = 1
 segmentLength = 0
 # character = ''
@@ -119,30 +145,8 @@ for character in ipAddress:
     else:
         segmentLength += 1
 
-if character != '.': # This test the last character if its not .
-    print("Segment {0}'s length is {1}".format(segment, segmentLength))
-
 
 # ======================================================================================
-
-# In this code, we test to see if there is no period at the end of input
-# if no period, we add one, if there is already one, we don't add
-
-
-# ipAddress = input("Please enter an IP address: ")
-# if ipAddress[-1] != '.': # if no period at end, then add/concatenate period
-#     ipAddress += '.' # Here we append a . to the input
-# segment = 1
-# segmentLength = 0
-# # character = ''
-#
-# for character in ipAddress:
-#     if character == '.':
-#         print("Segment {0}'s length is {1}".format(segment, segmentLength))
-#         segment += 1
-#         segmentLength = 0
-#     else:
-#         segmentLength += 1
 
 
 # splitting a line that is too long. Python likes only 120 or less characters per line
