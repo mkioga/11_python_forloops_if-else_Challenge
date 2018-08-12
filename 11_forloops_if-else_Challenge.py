@@ -29,26 +29,6 @@
 # I used range
 
 
-segment = 0  # initialize
-segmentLenth = 0  # initialize
-ipAddress = input("Please enter an IP address: ")  # Request IP address
-for i in range(0, len(ipAddress)): # test for range from 0 to length of input
-    if ipAddress[i] in '0123456789': # Test if input is in these numbers
-        segmentLenth += 1 # If it is, add 1 to segmentLength
-
-    elif segmentLenth > 0: # When no match (ipAddress[i] not in '0123456789') and segmentLength is > 0, do following
-        segment += 1
-        print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
-        segmentLenth = 0 # reinitialize segmentLength for next iteration
-
-print("-"*20)
-if segmentLenth > 0: # For last input where there is no . after it.
-    segment += 1
-    print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
-
-
-# This is my second code showing initial segment even if starting with .
-
 # segment = 0  # initialize
 # segmentLenth = 0  # initialize
 # ipAddress = input("Please enter an IP address: ")  # Request IP address
@@ -56,14 +36,34 @@ if segmentLenth > 0: # For last input where there is no . after it.
 #     if ipAddress[i] in '0123456789': # Test if input is in these numbers
 #         segmentLenth += 1 # If it is, add 1 to segmentLength
 #
-#     else:
+#     elif segmentLenth > 0: # When no match (ipAddress[i] not in '0123456789') and segmentLength is > 0, do following
 #         segment += 1
 #         print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
 #         segmentLenth = 0 # reinitialize segmentLength for next iteration
 #
+# print("-"*20)
 # if segmentLenth > 0: # For last input where there is no . after it.
 #     segment += 1
 #     print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
+
+
+# This is my second code showing initial segment even if starting with .
+
+segment = 0  # initialize
+segmentLenth = 0  # initialize
+ipAddress = input("Please enter an IP address: ")  # Request IP address
+for i in range(0, len(ipAddress)): # test for range from 0 to length of input
+    if ipAddress[i] in '0123456789': # Test if input is in these numbers
+        segmentLenth += 1 # If it is, add 1 to segmentLength
+
+    else:
+        segment += 1
+        print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
+        segmentLenth = 0 # reinitialize segmentLength for next iteration
+
+if segmentLenth > 0: # For last input where there is no . after it.
+    segment += 1
+    print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
 
 
 
