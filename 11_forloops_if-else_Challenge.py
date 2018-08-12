@@ -130,51 +130,52 @@
 # if no period, we add one, if there is already one, we don't add
 
 
-ipAddress = input("Please enter an IP address: ")
-if ipAddress[-1] != '.': # if no period at end, then add/concatenate period
-    ipAddress += '.' # Here we append a . to the input
-segment = 1
-segmentLength = 0
-# character = ''
-
-for character in ipAddress:
-    if character == '.':
-        print("Segment {0}'s length is {1}".format(segment, segmentLength))
-        segment += 1
-        segmentLength = 0
-    else:
-        segmentLength += 1
+# ipAddress = input("Please enter an IP address: ")
+# if ipAddress[-1] != '.': # if no period at end, then add/concatenate period
+#     ipAddress += '.' # Here we append a . to the input
+# segment = 1
+# segmentLength = 0
+# # character = ''
+#
+# for character in ipAddress:
+#     if character == '.':
+#         print("Segment {0}'s length is {1}".format(segment, segmentLength))
+#         segment += 1
+#         segmentLength = 0
+#     else:
+#         segmentLength += 1
 
 
 # ======================================================================================
 
+# Code for splitting lines in python:
 
 # splitting a line that is too long. Python likes only 120 or less characters per line
 # line length and breaking long line into two lines using double quotes
 # if you put the cursor at the place you want to split the line and hit enter
 # it will separate the line and add the double quotes
 
-# print()
-# print("this is a very long line. I am going to print a very long line. "
-#       "I am going to print a very long line. I am going to print a very long line")
+print()
+print("this is a very long line. I am going to print a very long line. "
+      "I am going to print a very long line. I am going to print a very long line")
 
 
 # Splitting a line with a forward cursor
 # When you hit enter at the place you want to split the line,
 # it splits it and adds a " and a \
 
-# inputPrompt = "This is the input prompt that we want to split using forward slash " \
-#               "at this point in the line to make it shorter"
-# print()
-# print(inputPrompt)
+inputPrompt = "This is the input prompt that we want to split using forward slash " \
+              "at this point in the line to make it shorter"
+print()
+print(inputPrompt)
 
 
 # Splitting a line using parenthesis
 # This is usually the prefered method
 
-# inputPrompt1 = ("I am going to split this line into two lines using parenthesis. "
-#                 "Make sure the second line is alligned with the first one")
-#
-# print()
-# print(inputPrompt1)
+inputPrompt1 = ("I am going to split this line into two lines using parenthesis. "
+                "Make sure the second line is alligned with the first one")
+
+print()
+print(inputPrompt1)
 
