@@ -49,49 +49,49 @@
 
 # This is my second code showing initial segment even if starting with .
 
-segment = 0  # initialize
-segmentLenth = 0  # initialize
-ipAddress = input("Please enter an IP address: ")  # Request IP address
-for i in range(0, len(ipAddress)): # test for range from 0 to length of input
-    if ipAddress[i] in '0123456789': # Test if input is in these numbers
-        segmentLenth += 1 # If it is, add 1 to segmentLength
-
-    else:
-        segment += 1
-        print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
-        segmentLenth = 0 # reinitialize segmentLength for next iteration
-
-if segmentLenth > 0: # For last input where there is no . after it.
-    segment += 1
-    print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
-
-
+# segment = 0  # initialize
+# segmentLenth = 0  # initialize
+# ipAddress = input("Please enter an IP address: ")  # Request IP address
+# for i in range(0, len(ipAddress)): # test for range from 0 to length of input
+#     if ipAddress[i] in '0123456789': # Test if input is in these numbers
+#         segmentLenth += 1 # If it is, add 1 to segmentLength
+#
+#     else:
+#         segment += 1
+#         print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
+#         segmentLenth = 0 # reinitialize segmentLength for next iteration
+#
+# if segmentLenth > 0: # For last input where there is no . after it.
+#     segment += 1
+#     print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
 
 
-# Trainers code
+
+
+# Trainers code_1
 # Trainer did not use range
 
 
-# ipAddress = input("Please enter an IP address: ")
-# segment = 1
-# segmentLength = 0
-# character = '' # initialize this so if you enter nothing, there is no error
-#
-# for character in ipAddress:
-#     if character == '.':
-#         print("Segment {0}'s length is {1}".format(segment, segmentLength))
-#         segment += 1
-#         segmentLength = 0
-#     else:
-#         segmentLength += 1
-#
-# if character != '.': # This test the last character if its not .
-#     print("Segment {0}'s length is {1}".format(segment, segmentLength))
-#
-#
+ipAddress = input("Please enter an IP address: ")
+segment = 1
+segmentLength = 0
+character = '' # initialize this so if you enter nothing, there is no error
+
+for character in ipAddress:
+    if character == '.':
+        print("Segment {0}'s length is {1}".format(segment, segmentLength))
+        segment += 1
+        segmentLength = 0
+    else:
+        segmentLength += 1  # increment segment length if character is not period (.)
+
+if character != '.': # This test the last character if its not .
+    print("Segment {0}'s length is {1}".format(segment, segmentLength))
 
 
-# Trainers code 2
+
+
+# Trainers code_2
 # Another way to do so as not to have the last two lines of code to test .
 # In this code, if you enter a number ending with a ., result will have two periods
 # And it will give a last result showing 0 length
