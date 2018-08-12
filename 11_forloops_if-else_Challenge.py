@@ -24,6 +24,8 @@
 # Although there are other techniques such as splitting the sting up, that
 # is not the approach we are looking for here
 
+# =====================================================================================
+
 # This is my first code
 # I assumed they don't want any printout if we are starting with a .
 # I used range
@@ -46,6 +48,7 @@
 #     segment += 1
 #     print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
 
+# ======================================================================================
 
 # This is my second code showing initial segment even if starting with .
 
@@ -67,28 +70,31 @@
 
 
 
+# ======================================================================================
+
 
 # Trainers code_1
 # Trainer did not use range
 
 
-ipAddress = input("Please enter an IP address: ")
-segment = 1
-segmentLength = 0
-character = '' # initialize this so if you enter nothing, there is no error
+# ipAddress = input("Please enter an IP address: ")
+# segment = 1
+# segmentLength = 0
+# character = '' # initialize this so if you enter nothing, there is no error
+#
+# for character in ipAddress:
+#     if character == '.':
+#         print("Segment {0}'s length is {1}".format(segment, segmentLength))
+#         segment += 1
+#         segmentLength = 0
+#     else:
+#         segmentLength += 1  # increment segment length if character is not period (.)
+#
+# if character != '.': # This test the last character if its not .
+#     print("Segment {0}'s length is {1}".format(segment, segmentLength))
 
-for character in ipAddress:
-    if character == '.':
-        print("Segment {0}'s length is {1}".format(segment, segmentLength))
-        segment += 1
-        segmentLength = 0
-    else:
-        segmentLength += 1  # increment segment length if character is not period (.)
 
-if character != '.': # This test the last character if its not .
-    print("Segment {0}'s length is {1}".format(segment, segmentLength))
-
-
+# ======================================================================================
 
 
 # Trainers code_2
@@ -99,23 +105,25 @@ if character != '.': # This test the last character if its not .
 # So you can add code to check that input does not end with period
 # See that in code after this.
 
-# ipAddress = input("Please enter an IP address: ")
-# ipAddress += '.' # Here we append a . to the input
-# segment = 1
-# segmentLength = 0
-# # character = ''
-#
-# for character in ipAddress:
-#     if character == '.':
-#         print("Segment {0}'s length is {1}".format(segment, segmentLength))
-#         segment += 1
-#         segmentLength = 0
-#     else:
-#         segmentLength += 1
+ipAddress = input("Please enter an IP address: ")
+ipAddress += '.' # Here we append a . to the input
+segment = 1
+segmentLength = 0
+# character = ''
 
-# if character != '.': # This test the last character if its not .
-#     print("Segment {0}'s length is {1}".format(segment, segmentLength))
+for character in ipAddress:
+    if character == '.':
+        print("Segment {0}'s length is {1}".format(segment, segmentLength))
+        segment += 1
+        segmentLength = 0
+    else:
+        segmentLength += 1
 
+if character != '.': # This test the last character if its not .
+    print("Segment {0}'s length is {1}".format(segment, segmentLength))
+
+
+# ======================================================================================
 
 # In this code, we test to see if there is no period at the end of input
 # if no period, we add one, if there is already one, we don't add
