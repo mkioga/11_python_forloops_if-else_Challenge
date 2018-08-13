@@ -1,3 +1,8 @@
+
+# ===================================
+# 11_forloops_if-else_Challenge.py:
+# ===================================
+
 # Create a program that takes an IP address entered at the keyboard
 # and prints out the number of segments it contains, and the length of each segment
 #
@@ -31,42 +36,42 @@
 # I used range
 
 
-# segment = 0  # initialize
-# segmentLenth = 0  # initialize
-# ipAddress = input("Please enter an IP address: ")  # Request IP address
-# for i in range(0, len(ipAddress)): # test for range from 0 to length of input
-#     if ipAddress[i] in '0123456789': # Test if input is in these numbers
-#         segmentLenth += 1 # If it is, add 1 to segmentLength
-#
-#     elif segmentLenth > 0: # When no match (ipAddress[i] not in '0123456789') and segmentLength is > 0, do following
-#         segment += 1
-#         print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
-#         segmentLenth = 0 # reinitialize segmentLength for next iteration
-#
-# print("-"*20)
-# if segmentLenth > 0: # For last input where there is no . after it.
-#     segment += 1
-#     print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
+segment = 0  # initialize
+segmentLenth = 0  # initialize
+ipAddress = input("Please enter an IP address: ")  # Request IP address
+for i in range(0, len(ipAddress)): # test for range from 0 to length of input
+    if ipAddress[i] in '0123456789': # Test if input is in these numbers
+        segmentLenth += 1 # If it is, add 1 to segmentLength
+
+    elif segmentLenth > 0: # When no match (ipAddress[i] not in '0123456789') and segmentLength is > 0, do following
+        segment += 1
+        print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
+        segmentLenth = 0 # reinitialize segmentLength for next iteration
+
+print("-"*20)
+if segmentLenth > 0: # For last input where there is no . after it.
+    segment += 1
+    print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
 
 # ======================================================================================
 
 # This is my second code showing initial segment even if starting with .
 
-# segment = 0  # initialize
-# segmentLenth = 0  # initialize
-# ipAddress = input("Please enter an IP address: ")  # Request IP address
-# for i in range(0, len(ipAddress)): # test for range from 0 to length of input
-#     if ipAddress[i] in '0123456789': # Test if input is in these numbers
-#         segmentLenth += 1 # If it is, add 1 to segmentLength
-#
-#     else:
-#         segment += 1
-#         print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
-#         segmentLenth = 0 # reinitialize segmentLength for next iteration
-#
-# if segmentLenth > 0: # For last input where there is no . after it.
-#     segment += 1
-#     print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
+segment = 0  # initialize
+segmentLenth = 0  # initialize
+ipAddress = input("Please enter an IP address: ")  # Request IP address
+for i in range(0, len(ipAddress)): # test for range from 0 to length of input
+    if ipAddress[i] in '0123456789': # Test if input is in these numbers
+        segmentLenth += 1 # If it is, add 1 to segmentLength
+
+    else:
+        segment += 1
+        print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
+        segmentLenth = 0 # reinitialize segmentLength for next iteration
+
+if segmentLenth > 0: # For last input where there is no . after it.
+    segment += 1
+    print("Segment {0}'s Length is {1}".format(segment, segmentLenth))
 
 
 
@@ -77,21 +82,21 @@
 # Trainer did not use range
 
 
-# ipAddress = input("Please enter an IP address: ")
-# segment = 1
-# segmentLength = 0
-# character = '' # initialize this so if you enter nothing, there is no error
-#
-# for character in ipAddress:
-#     if character == '.':
-#         print("Segment {0}'s length is {1}".format(segment, segmentLength))
-#         segment += 1
-#         segmentLength = 0
-#     else:
-#         segmentLength += 1  # increment segment length if character is not period (.)
-#
-# if character != '.': # This test the last character if its not .
-#     print("Segment {0}'s length is {1}".format(segment, segmentLength))
+ipAddress = input("Please enter an IP address: ")
+segment = 1
+segmentLength = 0
+character = '' # initialize this so if you enter nothing, there is no error
+
+for character in ipAddress:
+    if character == '.':
+        print("Segment {0}'s length is {1}".format(segment, segmentLength))
+        segment += 1
+        segmentLength = 0
+    else:
+        segmentLength += 1  # increment segment length if character is not period (.)
+
+if character != '.': # This test the last character if its not .
+    print("Segment {0}'s length is {1}".format(segment, segmentLength))
 
 
 # ======================================================================================
@@ -105,23 +110,23 @@
 # So you can add code to check that input does not end with period
 # See that in code after this.
 
-# ipAddress = input("Please enter an IP address: ")
-# ipAddress += '.' # Here we append a . to the input
-# segment = 1
-# segmentLength = 0
-# # character = ''
-#
-# for character in ipAddress:
-#     if character == '.':
-#         print("Segment {0}'s length is {1}".format(segment, segmentLength))
-#         segment += 1
-#         segmentLength = 0
-#     else:
-#         segmentLength += 1
-#
-# if character != '.': # This test the last character if its not .
-#     print("Segment {0}'s length is {1}".format(segment, segmentLength))
-#
+ipAddress = input("Please enter an IP address: ")
+ipAddress += '.' # Here we append a . to the input
+segment = 1
+segmentLength = 0
+# character = ''
+
+for character in ipAddress:
+    if character == '.':
+        print("Segment {0}'s length is {1}".format(segment, segmentLength))
+        segment += 1
+        segmentLength = 0
+    else:
+        segmentLength += 1
+
+if character != '.': # This test the last character if its not .
+    print("Segment {0}'s length is {1}".format(segment, segmentLength))
+
 
 # ======================================================================================
 
@@ -130,20 +135,20 @@
 # if no period, we add one, if there is already one, we don't add
 
 
-# ipAddress = input("Please enter an IP address: ")
-# if ipAddress[-1] != '.': # if no period at end, then add/concatenate period
-#     ipAddress += '.' # Here we append a . to the input
-# segment = 1
-# segmentLength = 0
-# # character = ''
-#
-# for character in ipAddress:
-#     if character == '.':
-#         print("Segment {0}'s length is {1}".format(segment, segmentLength))
-#         segment += 1
-#         segmentLength = 0
-#     else:
-#         segmentLength += 1
+ipAddress = input("Please enter an IP address: ")
+if ipAddress[-1] != '.': # if no period at end, then add/concatenate period
+    ipAddress += '.' # Here we append a . to the input
+segment = 1
+segmentLength = 0
+# character = ''
+
+for character in ipAddress:
+    if character == '.':
+        print("Segment {0}'s length is {1}".format(segment, segmentLength))
+        segment += 1
+        segmentLength = 0
+    else:
+        segmentLength += 1
 
 
 # ======================================================================================
